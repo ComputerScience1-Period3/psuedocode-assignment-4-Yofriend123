@@ -7,11 +7,18 @@ Psuedo code for 21
 THE GAME:
 21 is a card game that consists of a dealer and 1 or more players.
 RULES:
-The dealer gives one card faced up and one card faced down
-The player has the option to hit or stand
-When a player hits, they are given 1 card and if their cards equal 21, they win. If their cards go above 21, they get busted/eliminated.
-If a player decides to stand, they keep their cards and then it's the next persons turn.
-Whoever gets 21 first wins the game, but if everyone's cards add up to the same number that's less than 21 and decides to stand, it's a push/tie.
+The dealer gives each player one card faced up and one card faced down
+give The player has the option to hit or stand
+if a player hits:
+  give new card
+    if cards equal 21:
+      they win.
+  else if sum of cards is above 21:
+    player busts and loses round
+ If a player decides to stand:
+  they keeps players cards and pass turn.
+  
+Whoever gets closest 21 wins the game, but if everyone's cards add up to the same number that's less than 21 and decides to stand, it's a push/tie.
 VALUE OF EACH CARD:
 Aces : 1 or 11 
 Jacks, Queens, Kings, and 10 : 10
@@ -23,9 +30,9 @@ The players look at their cards
    say "21" to end the game
   Else:
    begin the game normally
-The dealer asks the player to hit or stand.
+The dealer asks the player to hit or stand
   If the player chooses to hit:
-    dealer gives the player 1 card faced down
+    dealer gives the player 1 card // have to show player 1 actual card to see value
   Else if the player chooses to stand:
         the player keeps the same cards
 The player looks at their cards again
@@ -35,6 +42,10 @@ The player looks at their cards again
     the player is busted (eliminated)
   Else:
     Continue the game normally
+if player has been already been dealt
+  end round, player with highest sum wins
+else if player has not been dealt
+  continue with game
 Proceed to deal cards to the next player
   If both players' cards are equal, less than 21, and they both stay:
     it is a push (tie)
