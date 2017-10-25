@@ -7,7 +7,7 @@ Psuedo code for 21
 THE GAME:
 21 is a card game that consists of a dealer and 1 or more players.
 RULES:
-The dealer gives one card faced up and one card faced down
+The dealer gives one card faced up and one card faced down //When the dealer deals the cards, is he giving two to each player or dealing them to the center, can you clarify?
 The player has the option to hit or stand
 When a player hits, they are given 1 card and if their cards equal 21, they win if they were given 21 first. If their cards go above 21, they get busted/eliminated.
 If a player decides to stand, they keep their cards and then it's the next persons turn.
